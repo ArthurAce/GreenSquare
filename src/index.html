@@ -26,8 +26,8 @@
             </li>
 
             <div class="menu__nav_phone">
-                <a href="">+7 (888) 111-222</a>
-                <a href="">+7 (888) 111-222</a>
+                <a href="tel:+7888111222">+7 (888) 111-222</a>
+                <a href="+7888111222">+7 (888) 111-222</a>
             </div>
 
             <div class="menu__nav_favorites">
@@ -100,30 +100,56 @@
                     <div class="slides">
                         <img src="img/image_01.jpeg" alt="office1" class="slide">
                         <h3 class="slider__title">Башня федерации восток <br>МФК </h3>
+                        <h2 class="slider__logo">GreenSquare</h2>
                     </div>
                     <div class="slides">
                         <img src="img/image_02.jpeg" alt="office2" class="slide">
                         <h3 class="slider__title">Lorem, ipsum dolor.<br>Lorem, ipsum.</h3>
+                        <h2 class="slider__logo">GreenSquare</h2>
                     </div>
                     <button class="prev" onclick="prevSlide()">&#10094</button>
                     <button class="next" onclick="nextSlide()">&#10095</button>
-                    <div class="slider__favorites">
-                        <p><i class="fa-regular fa-heart"></i></p>
+                    <div class="favorites favorites__slider">
+                        <p class="favorites__slider"><i class="fa-regular fa-heart"></i></p>
                     </div>
                 </div>
 
-                <div class="offices__box_list">
 
-                    <div class="offices__box_list_01">
-                        <img src="img/image_03.jpeg" alt="office3">
-                        <h2>Аренда офиса 1928 м<sup>2</sup></h2>
+                <div class="cards">
+
+                    <div class="card">
+                        <a href=""><img src="img/image_03.jpeg" alt="office" class="card__img"></a>
+                        <a href=""><p class="card__title">Аренда офиса 1928 м<sub>2</sub></p></a>
+                        <p class="card__status">Готов</p>
+                        <p class="card__floor">10 этаж</p>
+                        <p class="card__price">93 000р/м² в год</p>
+                        <p class="card__commission">Без комиссий</p>
+                        <div class="favorites favorites__slider">
+                            <p class="favorites__slider"><i class="fa-regular fa-heart"></i></p>
+                        </div>
                     </div>
 
-
-                    <div class="offices__box_list_02"></div>
+                    <div class="card">
+                        <a href=""><img src="img/image_03.jpeg" alt="office" class="card__img"></a>
+                        <a href=""><p class="card__title">Аренда офиса 1928 м<sub>2</sub></p></a>
+                        <p class="card__status">Готов</p>
+                        <p class="card__floor">10 этаж</p>
+                        <p class="card__price">93 000р/м² в год</p>
+                        <p class="card__commission">Без комиссий</p>
+                        <div class="favorites favorites__slider">
+                            <p class="favorites__slider"><i class="fa-regular fa-heart"></i></p>
+                        </div>
+                    </div>
 
                 </div>
+
+                
+
             </div>
+            
+
+            
+
         </div>
     </main>
 

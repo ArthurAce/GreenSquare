@@ -3,11 +3,29 @@ body {
           box-sizing: border-box;
   margin: 16px 126px 0 126px;
   background-color: rgba(190, 241, 151, 0.1);
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Arial", serif;
   font-weight: 400;
+  font-style: normal;
 }
 body a {
   text-decoration: none;
+}
+
+.favorites__slider {
+  position: absolute;
+  font-size: 24px;
+  color: rgb(255, 0, 0);
+  top: 10px;
+  right: 7px;
+  cursor: pointer;
+}
+.favorites__office {
+  position: absolute;
+  font-size: 24px;
+  color: rgb(255, 0, 0);
+  top: 6px;
+  right: 7px;
+  cursor: pointer;
 }
 
 .menu {
@@ -310,14 +328,6 @@ body a {
   margin: 0 15px;
   padding-top: 30px;
 }
-.offices .slider__favorites p {
-  position: absolute;
-  font-size: 30px;
-  color: rgb(255, 0, 0);
-  top: 22px;
-  right: 7px;
-  cursor: pointer;
-}
 .offices .slider__title {
   position: absolute;
   top: 16px;
@@ -326,6 +336,15 @@ body a {
   font-family: Red Hat Display;
   font-size: 24px;
   font-weight: 700;
+}
+.offices .slider__logo {
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  color: rgb(255, 255, 255);
+  font-family: Red Hat Display;
+  font-size: 16px;
+  font-weight: 500;
 }
 .offices .slider img {
   width: 550px;
@@ -370,6 +389,65 @@ body a {
   to {
     opacity: 1;
   }
+}
+
+.cards {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+}
+.cards .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(190, 241, 151, 0.1);
+  width: 665px;
+  height: 100px;
+  margin-bottom: 35px;
+}
+.cards .card a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.cards .card__title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 0 15px;
+}
+.cards .card__status {
+  color: rgb(122, 192, 67);
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  left: 122px;
+  top: 10px;
+}
+.cards .card__floor {
+  color: rgb(90, 81, 81);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 40px 30px 0 20px;
+}
+.cards .card__price {
+  color: rgb(90, 81, 81);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 40px 30px 0 0px;
+}
+.cards .card__commission {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 600;
+  position: absolute;
+  left: 122px;
+  top: 50px;
+  border-radius: 5px;
+  background: rgb(121, 131, 125);
+  padding: 6px 8px;
 }
 
 input[type=number]::-webkit-outer-spin-button,
