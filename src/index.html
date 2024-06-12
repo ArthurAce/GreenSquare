@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenSquare Офисы в Москве</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d02cf0bfe6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="menu">
+
+        <div class="menu__logo">
+            <a href=""><img class="menu__logo_img" src="icons/2 92.svg" alt="logo"></a>
+            <h2 class="menu__logo_text"><a href="">Офисы Москвы</a></h2>
+        </div>
+
+        <nav class="menu__nav">
+
+            <li class="menu__nav_list">
+                <ul><a href="">Главная</a></ul>
+                <ul><a href="">Бизнес Центр</a></ul>
+            </li>
+
+            <div class="menu__nav_phone">
+                <a href="">+7 (888) 111-222</a>
+                <a href="">+7 (888) 111-222</a>
+            </div>
+
+            <div class="menu__nav_favorites">
+                <p><i class="fa-solid fa-heart"></i></p>
+                <div class="menu__nav_favorites_txt"><a href="">Избранное</a></div>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <div class="sort">
+        <form class="sort__form" id="sortForm">
+            <label for="sortCriteria">Сортировать:</label>
+            <select class="sort__form_select" id="sortCriteria" name="sortCriteria">
+                <option value="name">По умолачанию</option>
+                <option value="date">По цене</option>
+                <option value="price">По площади</option>
+                <option value="rating">По рейтингу</option>
+            </select>
+            <select class="sort__form_select" id="sortValue" name="sortValue">
+                <option value="name">По возрастанию</option>
+                <option value="date">По уменшению</option>
+            </select>
+        </form>
+    </div>
+
+    <section class="form">
+        <h1 class="form__title">Аренда офисов в Москве</h1>
+        <div class="form__box">
+            <h2 class="form__box_title">Аренда</h2>
+            <input class="form__input" type="number" placeholder="Площадь офиса, м2" required>
+            <input class="form__input" type="number" placeholder="Ставка руб/м2" required>
+            <div class="form__class">
+                <p class="form__class_title">Класс</p>
+                
+
+                <div class="form__class_checkbox">
+                    <input class="form__class_checkbox_item" type="checkbox" id="classA">
+                    <label class="form__class_checkbox_label" for="classA">A</label>
+                </div>
+                <div class="form__class_checkbox">
+                    <input class="form__class_checkbox_item" type="checkbox" id="classB">
+                    <label class="form__class_checkbox_label" for="classB">B</label>
+                </div>
+                <div class="form__class_checkbox">
+                    <input class="form__class_checkbox_item" type="checkbox" id="classC">
+                    <label class="form__class_checkbox_label" for="classC">C</label>
+                </div>
+
+            </div>
+            <input class="form__input" type="text" placeholder="Название улицы или БЦ" required>
+
+            <div class="buttons">
+                <button type="submit" class="btn btn_submit">Подобрать</button>
+                <button type="reset" class="btn btn_reset">Очистить</button>
+            </div>
+        </div>
+    </section>
+
+    <main class="offices">
+        <figure class="offices__dscr">
+            <h2>Вы можете заказать индивидуальную подборку офиса.</h2>
+        </figure>
+
+        <div class="offices__list">
+            <div class="offices__box">
+
+                <div class="slider">
+                    <div class="slides">
+                        <img src="img/image_01.jpeg" alt="office1" class="slide">
+                        <h3 class="slider__title">Башня федерации восток <br>МФК </h3>
+                    </div>
+                    <div class="slides">
+                        <img src="img/image_02.jpeg" alt="office2" class="slide">
+                        <h3 class="slider__title">Lorem, ipsum dolor.<br>Lorem, ipsum.</h3>
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094</button>
+                    <button class="next" onclick="nextSlide()">&#10095</button>
+                    <div class="slider__favorites">
+                        <p><i class="fa-regular fa-heart"></i></p>
+                    </div>
+                </div>
+
+                <div class="offices__box_list">
+
+                    <div class="offices__box_list_01">
+                        <img src="img/image_03.jpeg" alt="office3">
+                        <h2>Аренда офиса 1928 м<sup>2</sup></h2>
+                    </div>
+
+
+                    <div class="offices__box_list_02"></div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

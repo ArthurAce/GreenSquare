@@ -1,0 +1,341 @@
+body {
+    box-sizing: border-box;
+    margin: 16px 126px 0 126px;
+    background-color: rgba(190, 241, 151, 0.1);
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 400;
+    a {
+        text-decoration: none;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(90, 81, 81);
+    height: 78px;
+    &__logo {
+        display: flex;
+        margin-right: 272px;
+        &_img {
+            max-width: 140px;
+        }
+        &_text {
+            max-width: 94px;
+            max-height: 38px;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 22px;
+            margin: 14px 0 0 12px;
+            a {
+                color: rgb(90, 81, 81);
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        &_list {
+            display: flex;
+            align-items: flex-end;
+            color: red;
+            list-style-type: none;
+            font-size: 28px;
+            font-weight: 900;
+            line-height: 28px;
+            margin: 30px 0 0 0;
+        }
+            a {
+                color: rgb(90, 81, 81);
+                transition: .4s all;
+                &:hover {
+                    color: rgb(95, 207, 56);
+            }
+        }
+        &_phone {
+            display: flex;
+            flex-direction: column;
+            max-width: 192px;
+            margin-left: 320px;
+        }
+
+        &_favorites {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 85px;
+            p {
+                cursor: pointer;
+                color: red;
+            }
+            &_txt {
+                margin-left: 12px;
+            }
+        }
+    }
+}
+
+.sort {
+    height: 45px;
+    margin-top: 155px;
+    position: absolute;
+    right: 126px;
+    font-size: 18px;
+    &__form {
+        label {
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+            background: rgba(190, 241, 151, 0.1);
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+        &_select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            padding: 10px;
+            padding-right: 30px;
+            margin-right: 10px;
+            border: 1px solid rgb(50, 60, 67);
+            border-radius: 4px;
+            background-color: rgba(190, 241, 151, 0.1);
+            font-size: 16px;
+            background-image: url(https://cdn-icons-png.flaticon.com/512/54/54785.png);
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            background-size: 10px;
+        }
+        #sortCriteria {
+            padding: 10px 140px 10px 15px;
+        }
+    }
+}
+
+.form {
+    margin-top: 240px;
+    &__title {
+        color: rgb(90, 81, 81);
+        font-size: 36px;
+        font-weight: 900;
+        text-align: left;
+        margin-bottom: 28px;
+    }
+    &__box {
+        width: 360px;
+        height: 620px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-radius: 5px;
+        background: rgb(121, 131, 125);
+        padding:12px 20px;
+        &_title {
+            color: rgb(255, 255, 255);
+            font-size: 36px;
+            font-weight: 900;
+            text-align: center;
+            margin: 40px auto 30px auto;
+        }
+    }
+    &__input {
+        padding: 20px 15px;
+        width: 360px;
+        height: 65px;
+        box-sizing: border-box;
+        border: 1px solid rgb(121, 131, 125);
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+        background: rgb(255, 255, 255);
+        margin-bottom: 32px;
+        color: rgb(120, 117, 117);
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+    }
+    &__class {
+        display: flex;
+        &_title {
+            color: rgb(229, 244, 220);
+            font-size: 18px;
+            font-weight: 400;
+            text-align: left;
+            margin: 0 42px 59px 0;
+        }
+        &_checkbox {
+            position: relative;
+            &_item {
+                appearance: none;
+                -webkit-appearance: none;
+            }
+            &_label {
+                color: rgb(253, 245, 245);
+                font-size: 20px;
+                font-weight: 500;
+                padding-left: 45px;
+                padding-right: 19px;
+                line-height: 50px;
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 40px;
+                    height: 50px;
+                    border: 1px solid rgb(121, 131, 125);
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+                    background: rgb(255, 255, 255);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    background: url(../icons/check.svg) no-repeat;
+                    background-size: 30px 30px;
+                    position: absolute;
+                    top: 12px;
+                    left: 6px;
+                    z-index: 2;
+                }
+            }   
+        }
+    }
+    .form__class_checkbox_item:checked + .form__class_checkbox_label::before {
+        background-color: rgb(95, 207, 56);
+    }
+}
+
+.buttons {
+    
+    .btn {
+        position: relative;
+        cursor: pointer;
+        left: 60px;
+        &_submit {
+            box-sizing: border-box;
+            border: none;
+            border-radius: 5px;
+            background: rgb(95, 207, 56);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 600;
+            padding: 19px 65px;
+            margin-bottom: 10px;
+            &:hover {
+                background: rgb(77, 185, 41);
+                -webkit-box-shadow: -2px -5px 23px -11px rgba(0,0,0,0.75);
+                -moz-box-shadow: -2px -5px 23px -11px rgba(0,0,0,0.75);
+                box-shadow: -2px -5px 23px -11px rgba(0,0,0,0.75);
+            }
+        }
+        &_reset {
+            box-sizing: border-box;
+            border: none;
+            border-radius: 5px;
+            background: rgb(121, 131, 125);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 600;
+            padding: 19px 65px;
+            &:hover {
+                color: rgb(77, 185, 41);
+            }
+        }
+    }
+}
+
+.offices {
+    position: absolute;
+    top: 445px;
+    left: 545px;
+    &__dscr {
+    position: absolute;
+    top: -75px;
+    left: -30px;
+    }
+    &__list {
+        background-color: rgb(255, 255, 255);
+        width: 1250px;
+        height: 1040px;
+    }
+
+
+    .slider {
+        position: relative;
+        width: 550px;
+        height: 360px;
+        margin: auto;
+        overflow: hidden;
+        margin: 0 15px;
+        padding-top: 30px;
+        &__favorites {
+            p {
+            position: absolute;
+            font-size: 30px;
+            color: rgb(255, 0, 0);
+            top: 22px;
+            right: 7px;
+            cursor: pointer;
+            }
+        }
+        &__title {
+            position: absolute;
+            top: 16px;
+            left: 30px;
+            color: rgb(255, 255, 255);
+            font-family: Red Hat Display;
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+    
+    .slider img {
+        width: 550px;
+        height: 360px;
+        display: none;
+    }
+    
+    img.displaySlide{
+        display: block;
+        animation: fade 1.5s cubic-bezier(0.12, 0, 0.39, 0) normal forwards;
+    }
+
+    .slider button{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        background: #3a232300;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+    .prev {
+        left: 0;
+    }
+    .next {
+        right: 0;
+    }
+
+    @keyframes fade {
+        from {opacity: 0.4;}
+        to {opacity: 1;}
+    }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
