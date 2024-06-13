@@ -1,0 +1,346 @@
+body {
+    box-sizing: border-box;
+    margin: 16px 126px 0 126px;
+    background-color: rgba(190, 241, 151, 0.1);
+    font-family: "Arial", serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x:hidden;
+    a {
+        text-decoration: none;
+    }
+}
+.favorites {
+    &__slider {
+    position: absolute;
+    font-size: 24px;
+    color: rgb(255, 0, 0);
+    top: 10px;
+    right: 6px;
+    cursor: pointer;
+    }
+    &__cards {
+        font-size: 24px;
+        color: rgb(255, 0, 0);
+        cursor: pointer;
+        margin: 40px 0 0 80px;
+        }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(90, 81, 81);
+    height: 78px;
+    &__logo {
+        display: flex;
+        margin-right: 272px;
+        &_img {
+            max-width: 140px;
+        }
+        &_text {
+            max-width: 94px;
+            max-height: 38px;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 22px;
+            margin: 14px 0 0 12px;
+            a {
+                color: rgb(90, 81, 81);
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        &_list {
+            display: flex;
+            align-items: flex-end;
+            color: red;
+            list-style-type: none;
+            font-size: 28px;
+            font-weight: 900;
+            line-height: 28px;
+            margin: 30px 0 0 0;
+        }
+            a {
+                color: rgb(90, 81, 81);
+                transition: .4s all;
+                &:hover {
+                    color: rgb(95, 207, 56);
+            }
+        }
+        &_phone {
+            display: flex;
+            flex-direction: column;
+            max-width: 192px;
+            margin-left: 320px;
+        }
+
+        &_favorites {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 85px;
+            p {
+                cursor: pointer;
+                color: red;
+            }
+            &_txt {
+                margin-left: 12px;
+            }
+        }
+    }
+    
+}
+.special {
+    width: 1920px;
+    height: 80px;
+    background: rgb(121, 131, 125);
+    margin-left: -126px;
+    display: flex;
+    justify-content: space-between;
+    &__list {
+        list-style-type: none;
+        display: flex;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 500;
+        margin-left: 86px;
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            margin-right: 52px;
+            &:hover {
+                color: rgb(95, 207, 56);
+            }
+        }
+    }
+    
+} 
+
+.about {
+    width: 1920px;
+    height: 80px;
+    background: rgb(153, 161, 156);
+    margin-left: -126px;
+    display: flex;
+    &__title {
+        margin-left: 126px;
+        color: rgb(255, 255, 255);
+        font-size: 28px;
+        font-weight: 500;
+
+    }
+    &__link {
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            font-weight: 500;
+            text-decoration-line: underline;
+            margin-left: 52px;
+            margin-top: 25px;
+    }
+}
+
+
+
+
+.buttons {
+    
+    .btn {
+        position: relative;
+        cursor: pointer;
+        &_submit {
+            box-sizing: border-box;
+            border: none;
+            border-radius: 5px;
+            background: rgb(95, 207, 56);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 600;
+            padding: 19px 65px;
+            margin-bottom: 10px;
+            &:hover {
+                background: rgb(77, 185, 41);
+                -webkit-box-shadow: -2px -5px 23px -11px rgba(0,0,0,0.75);
+                -moz-box-shadow: -2px -5px 23px -11px rgba(0,0,0,0.75);
+                box-shadow: -2px -5px 23px -11px rgba(0,0,0,0.75);
+            }
+        }
+        &__consultation {
+            box-sizing: border-box;
+            border: 3px solid rgb(77, 185, 41);
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 600;
+            width: 274px;
+            height: 52px;
+            left: -158px;
+            margin: 12px 0 0 0;
+
+            &:hover {
+                background: rgb(77, 185, 41);
+                color   : rgb(255,255,255);
+                -webkit-box-shadow: -2px -5px 23px -11px rgba(0,0,0,0.75);
+                -moz-box-shadow: -2px -5px 23px -11px rgba(0,0,0,0.75);
+                box-shadow: -2px -5px 23px -11px rgba(0,0,0,0.75);
+            }
+        }
+        &__contacts {
+            box-sizing: border-box;
+            border: 3px solid rgb(77, 185, 41);
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 600;
+            width: 210px;
+            height: 52px;
+            left: -126px;
+
+            &:hover {
+                background: rgb(77, 185, 41);
+                color   : rgb(255,255,255);
+                -webkit-box-shadow: -2px -5px 23px -11px rgba(0,0,0,0.75);
+                -moz-box-shadow: -2px -5px 23px -11px rgba(0,0,0,0.75);
+                box-shadow: -2px -5px 23px -11px rgba(0,0,0,0.75);
+            }
+        }
+        &__record {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.title {
+    color: rgb(90, 81, 81);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.office {
+    width: 1580px;
+    height: 1080px;
+    padding: 32px 43px;
+    background: rgb(255, 255, 255);
+    &__wrapper {
+        display: flex;
+    }
+    &__photo {
+        width: 550px;
+        height: 695px;
+    }
+    &__cards {
+        width: 530px;
+        height: 695px;
+    }
+    &__dscr {
+        &_title {
+            color: rgb(90, 81, 81);
+            font-size: 36px;
+            font-weight: 500;
+        }
+        &_text {
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    &__call {
+        width: 500px;
+        margin-left: 50px;
+        &_wrapper {
+            width: 375px;
+            height: 205px;
+            border: 3px solid rgb(121, 131, 125);
+        }
+    }
+}
+
+
+
+
+.comments {
+    position: absolute;
+    top: 1600px;
+    left: 126px;
+    display: flex;
+    padding-bottom: 140px;
+    &__wrapper {
+        width: 525px;
+        height: 405px;
+        box-sizing: border-box;
+        border: 1px solid rgb(245, 237, 237);
+        border-radius: 5px;
+        box-shadow: 0px 5px 14px 0px rgba(8, 15, 52, 0.04);
+        background: rgb(245, 237, 237);
+        padding: 32px;
+        margin-left: 48px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    &__text {
+        color: rgb(81, 79, 110);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+
+    }
+    &__person {
+        display: flex;
+        margin: 100px 0 0 0px;
+    }
+    &__name {
+        color: rgb(45, 54, 60);
+        font-size: 18px;
+        font-weight: 700;
+        margin-left: 20px;
+    }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+
+.footer {
+    position: absolute;
+    width: 1920px;
+    height: 150px;
+    bottom: -1290px;
+    left: 0;
+    background-color: rgb(122, 192, 67);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    &__logo {
+        color: rgb(255, 255, 255);
+        font-size: 36px;
+        font-weight: 900;
+        margin-left: 126px;
+        margin-top: 20px;
+    }
+    &__number {
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+        font-weight: 400;
+        margin: 20px 126px 40px 0;
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
