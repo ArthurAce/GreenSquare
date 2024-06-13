@@ -88,23 +88,25 @@
         </div>
     </section>
 
-    <main class="offices">
-        <figure class="offices__dscr">
-            <h2>Вы можете заказать индивидуальную подборку офиса.</h2>
-        </figure>
 
-        <div class="offices__list">
-            <div class="offices__box">
+    <main class="offices">
+
+        <h2 class="offices__info">Вы можете заказать индивидуальную подборку офиса.</h2>
+
+        <div class="cards">
+            <div class="cards__wrapper">
 
                 <div class="slider">
                     <div class="slides">
                         <img src="img/image_01.jpeg" alt="office1" class="slide">
                         <h3 class="slider__title">Башня федерации восток <br>МФК </h3>
+                        <h3 class="slider__address">г.Москва<br>Пресненская  набережная, 12</h3>
                         <h2 class="slider__logo">GreenSquare</h2>
                     </div>
                     <div class="slides">
                         <img src="img/image_02.jpeg" alt="office2" class="slide">
-                        <h3 class="slider__title">Lorem, ipsum dolor.<br>Lorem, ipsum.</h3>
+                        <h3 class="slider__title">Башня федерации восток <br>МФК </h3>
+                        <h3 class="slider__address">г.Москва<br>Пресненская  набережная, 12</h3>
                         <h2 class="slider__logo">GreenSquare</h2>
                     </div>
                     <button class="prev" onclick="prevSlide()">&#10094</button>
@@ -114,44 +116,80 @@
                     </div>
                 </div>
 
+                <div class="cards__list">
+                    <div class="cards__box">
+                        <div class="cards__item">
+                            <a href=""><img src="img/image_03.jpeg" alt="office" class="cards__item_img"></a>
+                            <a href=""><p class="cards__item_title">Аренда офиса 1928 м<sub>2</sub></p></a>
+                            <p class="cards__item_status">Готов</p>
+                            <p class="cards__item_floor">10 этаж</p>
+                            <p class="cards__item_price">93 000р/м² в год</p>
+                            <p class="cards__item_commission">Без комиссий</p>
+                            <div class="favorites ">
+                                <p class="favorites__cards"><i class="fa-regular fa-heart"></i></p>
+                            </div>
+                        </div>
 
-                <div class="cards">
-
-                    <div class="card">
-                        <a href=""><img src="img/image_03.jpeg" alt="office" class="card__img"></a>
-                        <a href=""><p class="card__title">Аренда офиса 1928 м<sub>2</sub></p></a>
-                        <p class="card__status">Готов</p>
-                        <p class="card__floor">10 этаж</p>
-                        <p class="card__price">93 000р/м² в год</p>
-                        <p class="card__commission">Без комиссий</p>
-                        <div class="favorites favorites__slider">
-                            <p class="favorites__slider"><i class="fa-regular fa-heart"></i></p>
+                        <div class="cards__item">
+                            <a href=""><img src="img/image_03.jpeg" alt="office" class="cards__item_img"></a>
+                            <a href=""><p class="cards__item_title">Аренда офиса 1928 м<sub>2</sub></p></a>
+                            <p class="cards__item_status">Готов</p>
+                            <p class="cards__item_floor">10 этаж</p>
+                            <p class="cards__item_price">93 000р/м² в год</p>
+                            <p class="cards__item_commission">Без комиссий</p>
+                            <div class="favorites">
+                                <p class="favorites__cards"><i class="fa-regular fa-heart"></i></p>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <a href=""><img src="img/image_03.jpeg" alt="office" class="card__img"></a>
-                        <a href=""><p class="card__title">Аренда офиса 1928 м<sub>2</sub></p></a>
-                        <p class="card__status">Готов</p>
-                        <p class="card__floor">10 этаж</p>
-                        <p class="card__price">93 000р/м² в год</p>
-                        <p class="card__commission">Без комиссий</p>
-                        <div class="favorites favorites__slider">
-                            <p class="favorites__slider"><i class="fa-regular fa-heart"></i></p>
-                        </div>
-                    </div>
-
+                    <div class="cards__list_all">Все площади <i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+                
+                
+            </div>
+            <div class="cards__info">
+                <div class="cards__geo">
+                    <p><img src="icons/metro.svg" alt=""><a href="">Деловой центр</a>- 1 минута пешком</p>
+                    <p><img src="icons/metro.svg" alt=""><a href="">Международная</a>- 3 мин. пешком</p>
+                    <p><img src="icons/metro.svg" alt=""><a href="">Выставочная</a>- 5 мин. пешком</p>
+                </div>
+                <div class="buttons cards__buttons">
+                    <button class="buttons btn btn_details">Подробнее</button>
+                    <button class="buttons btn btn_rewiev">Записаться на просмотр</button>
                 </div>
 
                 
-
             </div>
-            
+            <div class="cards__box">
+                <div class="cards__item">
+                    <a href=""><img src="img/image_03.jpeg" alt="office" class="cards__item_img"></a>
+                    <a href=""><p class="cards__item_title">Аренда офиса 1928 м<sub>2</sub></p></a>
+                    <p class="cards__item_status">Готов</p>
+                    <p class="cards__item_floor">10 этаж</p>
+                    <p class="cards__item_price">93 000р/м² в год</p>
+                    <p class="cards__item_commission">Без комиссий</p>
+                    <div class="favorites ">
+                        <p class="favorites__cards"><i class="fa-regular fa-heart"></i></p>
+                    </div>
+                </div>
 
+                <div class="cards__item">
+                    <a href=""><img src="img/image_03.jpeg" alt="office" class="cards__item_img"></a>
+                    <a href=""><p class="cards__item_title">Аренда офиса 1928 м<sub>2</sub></p></a>
+                    <p class="cards__item_status">Готов</p>
+                    <p class="cards__item_floor">10 этаж</p>
+                    <p class="cards__item_price">93 000р/м² в год</p>
+                    <p class="cards__item_commission">Без комиссий</p>
+                    <div class="favorites">
+                        <p class="favorites__cards"><i class="fa-regular fa-heart"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards__list_all">Все площади <i class="fa-solid fa-chevron-down"></i></div>
             
-
         </div>
     </main>
+
 
     <script src="js/script.js"></script>
 

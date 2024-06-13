@@ -16,16 +16,14 @@ body a {
   font-size: 24px;
   color: rgb(255, 0, 0);
   top: 10px;
-  right: 7px;
+  right: 6px;
   cursor: pointer;
 }
-.favorites__office {
-  position: absolute;
+.favorites__cards {
   font-size: 24px;
   color: rgb(255, 0, 0);
-  top: 6px;
-  right: 7px;
   cursor: pointer;
+  margin: 40px 0 0 80px;
 }
 
 .menu {
@@ -156,6 +154,7 @@ body a {
 
 .form {
   margin-top: 240px;
+  display: block;
 }
 .form__title {
   color: rgb(90, 81, 81);
@@ -303,23 +302,157 @@ body a {
 .buttons .btn_reset:hover {
   color: rgb(77, 185, 41);
 }
+.buttons .btn_details {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 3px solid rgb(77, 185, 41);
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  color: rgb(77, 185, 41);
+  font-size: 20px;
+  font-weight: 600;
+  width: 267px;
+  height: 52px;
+  left: 0px;
+}
+.buttons .btn_details:hover {
+  background: rgb(77, 185, 41);
+  color: rgb(255, 255, 255);
+  -webkit-box-shadow: -2px -5px 23px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px -5px 23px -11px rgba(0, 0, 0, 0.75);
+}
+.buttons .btn_rewiev {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 3px solid rgb(95, 207, 56);
+  border-radius: 5px;
+  background: rgb(95, 207, 56);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  width: 399px;
+  height: 52px;
+  left: 0px;
+}
+.buttons .btn_rewiev:hover {
+  background: rgb(77, 185, 41);
+  -webkit-box-shadow: -2px -5px 23px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px -5px 23px -11px rgba(0, 0, 0, 0.75);
+}
 
 .offices {
+  width: 1245px;
+  padding: 30px 0;
   position: absolute;
-  top: 445px;
-  left: 545px;
+  top: 363px;
+  left: 540px;
 }
-.offices__dscr {
-  position: absolute;
-  top: -75px;
-  left: -30px;
+.offices__info {
+  color: rgb(1, 1, 1);
+  font-size: 20px;
+  font-weight: 400;
 }
-.offices__list {
-  background-color: rgb(255, 255, 255);
-  width: 1250px;
+
+.cards {
   height: 1040px;
+  background-color: #fff;
+  position: relative;
 }
-.offices .slider {
+.cards__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.cards__list {
+  width: 655px;
+}
+.cards__list_all {
+  color: rgb(227, 30, 36);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.cards__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(190, 241, 151, 0.1);
+  margin-top: 30px;
+  width: 100%;
+  padding: 15px 5px;
+}
+.cards__item_title {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 0 16px;
+  text-align: top;
+}
+.cards__item_status {
+  color: rgb(122, 192, 67);
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  top: 30px;
+  left: 127px;
+}
+.cards__item_floor {
+  color: rgb(90, 81, 81);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 44px 0 0 20px;
+}
+.cards__item_price {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 44px 0 0 30px;
+}
+.cards__item_commission {
+  position: absolute;
+  left: 129px;
+  top: 77px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 10px;
+  border-radius: 5px;
+  background: rgb(121, 131, 125);
+  padding: 6px 7px;
+}
+.cards__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cards__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.cards__geo {
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+}
+.cards__geo p {
+  margin: 7px 0 0 15px;
+}
+
+.slider {
   position: relative;
   width: 550px;
   height: 360px;
@@ -328,35 +461,47 @@ body a {
   margin: 0 15px;
   padding-top: 30px;
 }
-.offices .slider__title {
+.slider__title {
   position: absolute;
   top: 16px;
   left: 30px;
   color: rgb(255, 255, 255);
-  font-family: Red Hat Display;
   font-size: 24px;
   font-weight: 700;
 }
-.offices .slider__logo {
+.slider__address {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 12px;
+  left: 30px;
+}
+.slider__logo {
   position: absolute;
   bottom: 0px;
   right: 5px;
   color: rgb(255, 255, 255);
-  font-family: Red Hat Display;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
 }
-.offices .slider img {
-  width: 550px;
-  height: 360px;
+
+.slider img {
+  height: 100%;
   display: none;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-.offices img.displaySlide {
+
+img.displaySlide {
   display: block;
   -webkit-animation: fade 1.5s cubic-bezier(0.12, 0, 0.39, 0) normal forwards;
           animation: fade 1.5s cubic-bezier(0.12, 0, 0.39, 0) normal forwards;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-.offices .slider button {
+
+.slider button {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -368,12 +513,15 @@ body a {
   padding: 10px 15px;
   cursor: pointer;
 }
-.offices .prev {
+
+.prev {
   left: 0;
 }
-.offices .next {
+
+.next {
   right: 0;
 }
+
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
@@ -382,6 +530,7 @@ body a {
     opacity: 1;
   }
 }
+
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -390,66 +539,6 @@ body a {
     opacity: 1;
   }
 }
-
-.cards {
-  position: absolute;
-  top: 30px;
-  right: 0;
-  color: rgb(0, 0, 0);
-  font-size: 18px;
-  font-weight: 500;
-}
-.cards .card {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: rgba(190, 241, 151, 0.1);
-  width: 665px;
-  height: 100px;
-  margin-bottom: 35px;
-}
-.cards .card a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-.cards .card__title {
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 0 0 15px;
-}
-.cards .card__status {
-  color: rgb(122, 192, 67);
-  font-size: 18px;
-  font-weight: 600;
-  position: absolute;
-  left: 122px;
-  top: 10px;
-}
-.cards .card__floor {
-  color: rgb(90, 81, 81);
-  font-size: 16px;
-  font-weight: 500;
-  margin: 40px 30px 0 20px;
-}
-.cards .card__price {
-  color: rgb(90, 81, 81);
-  font-size: 16px;
-  font-weight: 500;
-  margin: 40px 30px 0 0px;
-}
-.cards .card__commission {
-  color: rgb(255, 255, 255);
-  font-size: 14px;
-  font-weight: 600;
-  position: absolute;
-  left: 122px;
-  top: 50px;
-  border-radius: 5px;
-  background: rgb(121, 131, 125);
-  padding: 6px 8px;
-}
-
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
