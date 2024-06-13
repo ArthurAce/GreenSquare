@@ -53,3 +53,5 @@ function nextSlide(){
     showSlide(slideIndex)
 
 }
+
+
