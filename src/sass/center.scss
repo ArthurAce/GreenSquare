@@ -209,10 +209,7 @@ body {
                 box-shadow: -2px -5px 23px -11px rgba(0,0,0,0.75);
             }
         }
-        &__record {
-            width: 40px;
-            height: 40px;
-        }
+
     }
 }
 
@@ -230,13 +227,93 @@ body {
     &__wrapper {
         display: flex;
     }
-    &__photo {
+    &__title {
+        color: rgb(90, 81, 81);
+        font-size: 28px;
+        font-weight: 600;
+        margin-left: 15px;
+    }
+    &__slider {
         width: 550px;
         height: 695px;
     }
+    &__gallery {
+        padding-left: 15px;
+        display: flex;
+        &_img {
+            margin-right: 10px;
+            width: 192px;
+            height: 118px;
+            overflow: hidden;
+        }
+    }
     &__cards {
+        position: relative;
         width: 530px;
         height: 695px;
+        margin: 30px 0 45px 15px;
+        &_title {
+            color: rgb(90, 81, 81);
+            font-size: 28px;
+            font-weight: 600;
+            margin:0 0 45px 15px;
+        }
+        &_subtitle {
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-weight: 500;
+            position: absolute;
+            top: 75px;
+            left: 130px;
+        }
+        &_status {
+            position: absolute;
+            color: rgb(90, 81, 81);
+            font-size: 16px;
+            font-weight: 600;
+            top: 160px;
+            left: 130px;
+        }
+        &_floor {
+            position: absolute;
+            top: 115px;
+            left: 260px;
+        }
+        &_price {
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            font-weight: 600;
+            position: absolute;
+            top: 110px;
+            left: 130px;
+        }
+        &_more {
+            box-sizing: border-box;
+            border: none;
+            border-radius: 5px;
+            background: rgb(95, 207, 56);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 600;
+            width: 130px;
+            height: 50px;
+            position: absolute;
+            top: 95px;
+            right: 15px;
+            &:hover {
+                background: rgb(77, 185, 41);
+                -webkit-box-shadow: -2px -5px 23px -11px rgba(0,0,0,0.75);
+                -moz-box-shadow: -2px -5px 23px -11px rgba(0,0,0,0.75);
+                box-shadow: -2px -5px 23px -11px rgba(0,0,0,0.75);
+            }
+        }
+    }
+    &__card {
+        width: 475px;
+        height: 100px;
+        padding: 18px 14px;
+        background: rgba(190, 241, 151, 0.1);
+        display: flex;
     }
     &__dscr {
         &_title {
@@ -258,7 +335,87 @@ body {
             height: 205px;
             border: 3px solid rgb(121, 131, 125);
         }
+        &_btn {
+            width: 376px;
+            height: 52px;
+            box-sizing: border-box;
+            border: 3px solid rgb(255, 255, 255);
+            border-radius: 15px;
+            background: rgb(121, 131, 125);
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 600;
+        }
     }
+
+    .slider {
+        position: relative;
+        width: 550px;
+        height: 360px;
+        margin: auto;
+        overflow: hidden;
+        margin: 0 15px;
+        padding-top: 30px;
+    
+        &__title {
+            position: absolute;
+            top: 16px;
+            left: 30px;
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            font-weight: 700;
+        }
+    
+        &__address {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 500;
+            position: absolute;
+            bottom: 12px;
+            left: 30px;
+        }
+    
+        &__logo {
+            position: absolute;
+            bottom: 0px;
+            right: 5px;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 700;
+        }
+    
+    }
+    
+    .slider img {
+        height: 100%;
+        display: none;
+        object-fit: contain;
+    }
+    
+    img.displaySlide{
+        display: block;
+        animation: fade 1.5s cubic-bezier(0.12, 0, 0.39, 0) normal forwards;
+        object-fit: contain;
+    }
+    
+    .slider button{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        background: #3a232300;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+    .prev {
+        left: 0;
+    }
+    .next {
+        right: 0;
+    }
+
 }
 
 

@@ -540,6 +540,93 @@ img.displaySlide {
     opacity: 1;
   }
 }
+.slider2 {
+  position: relative;
+  width: 550px;
+  height: 360px;
+  margin: auto;
+  overflow: hidden;
+  margin: 0 15px;
+  padding-top: 30px;
+}
+.slider2__title {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 700;
+}
+.slider2__address {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 12px;
+  left: 30px;
+}
+.slider2__logo {
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.slider2 img {
+  height: 100%;
+  display: none;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+img.displaySlide2 {
+  display: block;
+  -webkit-animation: fade2 1.5s cubic-bezier(0.12, 0, 0.39, 0) normal forwards;
+          animation: fade2 1.5s cubic-bezier(0.12, 0, 0.39, 0) normal forwards;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.slider2 button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 30px;
+  background: rgba(58, 35, 35, 0);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.prev2 {
+  left: 0;
+}
+
+.next2 {
+  left: 505px;
+}
+
+@-webkit-keyframes fade2 {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade2 {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .comments {
   position: absolute;
   top: 1600px;

@@ -233,10 +233,6 @@ body a {
   -webkit-box-shadow: -2px -5px 23px -11px rgba(0, 0, 0, 0.75);
   box-shadow: -2px -5px 23px -11px rgba(0, 0, 0, 0.75);
 }
-.buttons .btn__record {
-  width: 40px;
-  height: 40px;
-}
 
 .title {
   color: rgb(90, 81, 81);
@@ -255,13 +251,97 @@ body a {
   display: -ms-flexbox;
   display: flex;
 }
-.office__photo {
+.office__title {
+  color: rgb(90, 81, 81);
+  font-size: 28px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+.office__slider {
   width: 550px;
   height: 695px;
 }
+.office__gallery {
+  padding-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.office__gallery_img {
+  margin-right: 10px;
+  width: 192px;
+  height: 118px;
+  overflow: hidden;
+}
 .office__cards {
+  position: relative;
   width: 530px;
   height: 695px;
+  margin: 30px 0 45px 15px;
+}
+.office__cards_title {
+  color: rgb(90, 81, 81);
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 45px 15px;
+}
+.office__cards_subtitle {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  top: 75px;
+  left: 130px;
+}
+.office__cards_status {
+  position: absolute;
+  color: rgb(90, 81, 81);
+  font-size: 16px;
+  font-weight: 600;
+  top: 160px;
+  left: 130px;
+}
+.office__cards_floor {
+  position: absolute;
+  top: 115px;
+  left: 260px;
+}
+.office__cards_price {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  top: 110px;
+  left: 130px;
+}
+.office__cards_more {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  background: rgb(95, 207, 56);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  width: 130px;
+  height: 50px;
+  position: absolute;
+  top: 95px;
+  right: 15px;
+}
+.office__cards_more:hover {
+  background: rgb(77, 185, 41);
+  -webkit-box-shadow: -2px -5px 23px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px -5px 23px -11px rgba(0, 0, 0, 0.75);
+}
+.office__card {
+  width: 475px;
+  height: 100px;
+  padding: 18px 14px;
+  background: rgba(190, 241, 151, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .office__dscr_title {
   color: rgb(90, 81, 81);
@@ -281,6 +361,82 @@ body a {
   width: 375px;
   height: 205px;
   border: 3px solid rgb(121, 131, 125);
+}
+.office__call_btn {
+  width: 376px;
+  height: 52px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  background: rgb(121, 131, 125);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+}
+.office .slider {
+  position: relative;
+  width: 550px;
+  height: 360px;
+  margin: auto;
+  overflow: hidden;
+  margin: 0 15px;
+  padding-top: 30px;
+}
+.office .slider__title {
+  position: absolute;
+  top: 16px;
+  left: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 700;
+}
+.office .slider__address {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 12px;
+  left: 30px;
+}
+.office .slider__logo {
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+}
+.office .slider img {
+  height: 100%;
+  display: none;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.office img.displaySlide {
+  display: block;
+  -webkit-animation: fade 1.5s cubic-bezier(0.12, 0, 0.39, 0) normal forwards;
+          animation: fade 1.5s cubic-bezier(0.12, 0, 0.39, 0) normal forwards;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.office .slider button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 30px;
+  background: rgba(58, 35, 35, 0);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.office .prev {
+  left: 0;
+}
+.office .next {
+  right: 0;
 }
 
 .comments {

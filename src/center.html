@@ -32,7 +32,7 @@
 
             <div class="menu__nav_favorites">
                 <p><i class="fa-solid fa-heart"></i></p>
-                <div class="menu__nav_favorites_txt"><a href="">Избранное</a></div>
+                <div class="menu__nav_favorites_txt"><a href="favorites.html">Избранное</a></div>
             </div>
 
         </nav>
@@ -61,17 +61,51 @@
     <main class="office">
         <div class="office__wrapper">
 
-            <div class="office__photo">
-                    <img src="img/image_01.jpeg" alt="">
+            <div class="office__slider">
+                <h2 class="office__title">Фотографии</h2>
+                <div class="slider">
+                    <div class="slides">
+                        <img src="img/image_01.jpeg" alt="office1" class="slide block">
+                        <h2 class="slider__logo">GreenSquare</h2>
+                    </div>
+                    <div class="slides">
+                        <img src="img/image_02.jpeg" alt="office2" class="slide">
+                        <h2 class="slider__logo">GreenSquare</h2>
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094</button>
+                    <button class="next" onclick="nextSlide()">&#10095</button>
+                    <div class="favorites favorites__slider">
+                        <p class="favorites__slider"><i class="fa-regular fa-heart"></i></p>
+                    </div>
+                </div>
+                <div class="office__gallery">
+                    <img src="img/image_02.jpeg" alt="office" class="office__gallery_img">
+                    <img src="img/image_02.jpeg" alt="office" class="office__gallery_img">
+                    
+                    <img src="img/image_02.jpeg" alt="office" class="office__gallery_img">
+                </div>
             </div>
 
             <div class="office__cards">
-                    <img src="img/image_01.jpeg" alt="">
+                <h2 class="office__cards_title">Аренда офиса</h2>
+                    <div class="office__card">
+                        <a href=""><img src="img/image_03.jpeg" alt="office" class="office__cards_img"></a>
+                        <a href=""><p class="office__cards_subtitle">Аренда офиса 1928 м<sub>2</sub></p></a>
+                        <p class="office__cards_status">Под отделку</p>
+                        <p class="office__cards_floor"><img src="icons/building.png" alt="building">  <sup>3 этаж</sup></p>
+                        <p class="office__cards_price">93 000р/м² <br>в год</p>
+                        <button class="office__cards_more">Подробнее</button>
+                    </div>
+
+
+
+
+                    
             </div>
 
             <div class="office__call">
                 <div class="office__call_wrapper">
-                    <button class="buttons btn btn__record"> <i class="fa-solid fa-magnifying-glass"></i> Записаться на просмотр</button>
+                    <button class="office__call_btn"> <i class="fa-solid fa-magnifying-glass"></i> Записаться на просмотр</button>
                     <div class="office__call_fav">
                         <p><i class="fa-solid fa-heart" style="color: #ff0000;"></i> В избранное</p>
                         <p><span>1</span> Избранное</p>
