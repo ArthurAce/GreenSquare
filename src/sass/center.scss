@@ -99,6 +99,7 @@ body {
     height: 80px;
     background: rgb(121, 131, 125);
     margin-left: -126px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     &__list {
@@ -345,6 +346,10 @@ body {
             color: rgb(255, 255, 255);
             font-size: 16px;
             font-weight: 600;
+            cursor: pointer;
+            &:hover {
+                color: rgb(77, 185, 41);
+            }
         }
     }
 
@@ -418,12 +423,19 @@ body {
 
 }
 
-
+.map {
+    margin-top: 95px;
+    &__title {
+        color: rgb(90, 81, 81);
+        font-size: 36px;
+        font-weight: 600;
+    }
+}
 
 
 .comments {
     position: absolute;
-    top: 1600px;
+    top: 1910px;
     left: 126px;
     display: flex;
     padding-bottom: 140px;
@@ -460,23 +472,14 @@ body {
     }
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none; 
-}
-input[type='number'],
-input[type="number"]:hover,
-input[type="number"]:focus {
-    appearance: none;
-    -moz-appearance: textfield;
-}
+
 
 
 .footer {
     position: absolute;
     width: 1920px;
     height: 150px;
-    bottom: -1290px;
+    bottom: -1610px;
     left: 0;
     background-color: rgb(122, 192, 67);
     padding: 0;

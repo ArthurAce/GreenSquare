@@ -123,6 +123,7 @@ body a {
   height: 80px;
   background: rgb(121, 131, 125);
   margin-left: -126px;
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,6 +374,10 @@ body a {
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: 600;
+  cursor: pointer;
+}
+.office__call_btn:hover {
+  color: rgb(77, 185, 41);
 }
 .office .slider {
   position: relative;
@@ -439,9 +444,18 @@ body a {
   right: 0;
 }
 
+.map {
+  margin-top: 95px;
+}
+.map__title {
+  color: rgb(90, 81, 81);
+  font-size: 36px;
+  font-weight: 600;
+}
+
 .comments {
   position: absolute;
-  top: 1600px;
+  top: 1910px;
   left: 126px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,24 +497,11 @@ body a {
   margin-left: 20px;
 }
 
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-input[type=number],
-input[type=number]:hover,
-input[type=number]:focus {
-  -webkit-appearance: none;
-          appearance: none;
-  -moz-appearance: textfield;
-}
-
 .footer {
   position: absolute;
   width: 1920px;
   height: 150px;
-  bottom: -1290px;
+  bottom: -1610px;
   left: 0;
   background-color: rgb(122, 192, 67);
   padding: 0;
